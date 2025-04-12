@@ -41,6 +41,7 @@ sudo apt update && sudo apt install graylog-server
 
 pwgen -N 1 -s 96
 echo -n yourpassword | shasum -a 256
-# "yourpassword" will be the password you will use to login to your graylog machine the username should be  "admin"
+# "yourpassword" will be the password you will use to login to your graylog after the setup is complete machine the username should be  "admin"
 
 nano /etc/graylog/server/server.conf
+#scroll to the bottom and change the http bind address to 192.168.1.51 the port should remain as set unless there is a preset port
